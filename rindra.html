@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Arindra</title>
+    <link rel="stylesheet" type="text/css" href="indra.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="header">
+            <div class="img-area">
+
+                    <div class="mySlides fade">
+
+                      <img src="png-transparent-doraemon-illustration-how-to-draw-doraemon-drawing-cartoon-sketch-doraemon-manga-desktop-wallpaper-film-thumbnail.png" style="width:100%; align-items: center;">
+                      
+                    </div>
+                    
+                    <div class="mySlides fade">
+
+                      <img src="png-transparent-doraemon-3-nobita-to-toki-no-hougyoku-cartoon-doraemon-television-fictional-character-desktop-wallpaper.png" style="width:100%; align-items: center;">
+
+                    </div>
+                    
+                    <div class="mySlides fade">
+
+                      <img src="png-transparent-doraemon-miffy-desktop-doraemon.png" style="width:100%; align-items: center;">
+
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    
+                    <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+            <h1>arindra S P</h1>
+            <h3>wab Developer</h3>
+        </div>
+        <div class="main">
+            <div class="lift">
+                <h2>Tentang Saya</h2>
+                <p><strong>Name:</strong> Arindra S P</p>
+                <p><strong>Age:</strong> 25</p>
+                <p><strong>Email:</strong> ap53@gmail.com</p>
+                <p><strong>HP:</strong> 085780902010</p>
+                <h2>Kemampuan</h2>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>SQL</li>
+                </ul>
+                <h2>Pendidikan</h2>
+                <h3>S1 TEKNIK INFORMATIK</h3>
+                <p>Universitas Terbaik jakarta, Tahun 2020</p>
+                <h3>TEKNIK JARINGAN KOMPUTER</h3>
+                <P>SMK ANGKASA, Tahun 2016</P>
+            </div>
+            <div class="right">
+                <h2>Pengalaman Kerja</h2>
+                <h3>HIJK COMPANY</h3>
+                <P><strong>Posisi</strong> Software Developer</P>
+                <P><strong>Periode</strong> 2022-2024</P>
+                <ul>
+                    <li>Mengembangkan dan memelihara aplikasi web menggunakan React, Node.js dan SQL</li>
+                    <li>Menerapkan desai responsif mennggunakan CSS flexbox dan kueri media</li>
+                    <li>Berkolaborasi dengn tim lintas fungsi untuk menghadirkan perangkat lunak berkualitas tinggi produksi </li>
+                </ul><br>
+                <h3>id.net COMPANY</h3>
+                <P><strong>Posisi</strong> web Developer</P>
+                <P><strong>Periode</strong> 2020-2022</P>
+                <ul>
+                    <li>Membuat dan memelihara aitua web menggunakan HTML, CSS, dan JavaScript</li>
+                    <li>Pengoptimalan kinerja situs web dan pengalaman pengguna menggunakanpraktik terbaik </li>
+                    <li>Bekerja dengan klien untuk memahami kebutuhan mereka dan memberikan solusi khusus </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
